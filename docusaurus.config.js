@@ -6,7 +6,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   favicon: 'img/logo.ico',
   organizationName: 'lucialand', // Usually your GitHub org/user name.
-  projectName: 'lucia', // Usually your repo name.
+  projectName: 'lucia-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Lucia',
