@@ -8,6 +8,9 @@ module.exports = {
   organizationName: 'lucialand', // Usually your GitHub org/user name.
   projectName: 'lucia-docs', // Usually your repo name.
   themeConfig: {
+    prism: {
+      theme: require('prism-react-renderer/themes/dracula'),
+    },
     navbar: {
       title: 'Lucia',
       logo: {
