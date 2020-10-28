@@ -1,0 +1,98 @@
+import React from 'react';
+import clsx from 'clsx';
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import styles from './styles.module.css';
+
+const features = [
+  {
+    title: 'Declarative',
+    //imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    description: (
+      <>
+        Lucia provides a declarative API similar to Vue/Alpine to create views, making development predictable and intuitive 
+        through markup-centric code.
+      </>
+    ),
+  },
+  {
+    title: 'Reactive',
+    //imageUrl: 'img/undraw_docusaurus_tree.svg',
+    description: (
+      <>
+        When the view is changed, the internal reference Virtual DOM will 
+        automatically react and will update and render the new view in realtime.
+      </>
+    ),
+  },
+  {
+    title: 'Lightweight',
+    //imageUrl: 'img/undraw_docusaurus_react.svg',
+    description: (
+      <>
+        Lucia is extremely light (~4kb min+brotli) and performant as it does not use a 
+        traditional Virtual DOM, rather it renders directives only if necessary by 
+        skipping static nodes through selectors.
+      </>
+    ),
+  },
+];
+
+function Feature({imageUrl, title, description}) {
+  const imgUrl = useBaseUrl(imageUrl);
+  return (
+    <div className={clsx('col col--4', styles.feature)}>
+      {imgUrl && (
+        <div className="text--center">
+          <img className={styles.featureImage} src={imgUrl} alt={title} />
+        </div>
+      )}
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+  );
+}
+
+function Home() {
+  const context = useDocusaurusContext();
+  const {siteConfig = {}} = context;
+  return (
+    <Layout
+      title={`${siteConfig.title}`}
+      description="Description will go into a meta tag in <head />">
+      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <div className={styles.buttons}>
+            <Link
+              className={clsx(
+                'button button--outline button--secondary button--lg',
+                styles.getStarted,
+              )}
+              to={useBaseUrl('docs/')}>
+              Get Started
+            </Link>
+          </div>
+        </div>
+      </header>
+      <main>
+        {features && features.length > 0 && (
+          <section className={styles.features}>
+            <div className="container">
+              <div className="row">
+                {features.map((props, idx) => (
+                  <Feature key={idx} {...props} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+      </main>
+    </Layout>
+  );
+}
+
+export default Home;
