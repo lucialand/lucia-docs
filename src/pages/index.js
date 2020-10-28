@@ -12,8 +12,8 @@ const features = [
     //imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Lucia provides a declarative API similar to Vue/Alpine to create views, making development predictable and intuitive 
-        through markup-centric code.
+        Lucia provides a declarative API similar to Vue/Alpine to create views, making development
+        predictable and intuitive through markup-centric code.
       </>
     ),
   },
@@ -22,8 +22,8 @@ const features = [
     //imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        When the view is changed, the internal reference Virtual DOM will 
-        automatically react and will update and render the new view in realtime.
+        When the view is changed, the internal reference Virtual DOM will automatically react and
+        will update and render the new view in realtime.
       </>
     ),
   },
@@ -32,15 +32,15 @@ const features = [
     //imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Lucia is extremely light (~4kb min+brotli) and performant as it does not use a 
-        traditional Virtual DOM, rather it renders directives only if necessary by 
-        skipping static nodes through selectors.
+        Lucia is extremely light (~4kb min+brotli) and performant as it does not use a traditional
+        Virtual DOM, rather it renders directives only if necessary by skipping static nodes through
+        selectors.
       </>
     ),
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx('col col--4', styles.feature)}>
@@ -57,11 +57,12 @@ function Feature({imageUrl, title, description}) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Description will go into a meta tag in <head />"
+    >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -70,9 +71,10 @@ function Home() {
             <Link
               className={clsx(
                 'button button--outline button--secondary button--lg',
-                styles.getStarted,
+                styles.getStarted
               )}
-              to={useBaseUrl('docs/')}>
+              to={useBaseUrl('docs/')}
+            >
               Get Started
             </Link>
           </div>

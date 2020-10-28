@@ -8,6 +8,7 @@ title: Joining Items
   <p l-join="fruits by , "></p>
 </div>
 ```
+
 ```javascript
 function ListRendering() {
   return {

@@ -9,6 +9,7 @@ title: Form Input Bindings
   <p l-text="message"></p>
 </div>
 ```
+
 ```javascript
 function FormInputBindings() {
   return {

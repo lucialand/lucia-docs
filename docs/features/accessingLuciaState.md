@@ -8,6 +8,7 @@ title: Accessing Lucia State
   <p l-text="message"></p>
 </div>
 ```
+
 ```javascript
 const App = Lucia.use('App', {
   message: 'Hello World',

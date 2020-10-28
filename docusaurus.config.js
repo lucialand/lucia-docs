@@ -24,7 +24,7 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        { to: 'blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/aidenybai/lucia',
           label: 'GitHub',
@@ -54,7 +54,7 @@ module.exports = {
             {
               label: 'Discord',
               href: 'https://discord.gg/q2pSU39',
-            }
+            },
           ],
         },
         {
@@ -81,14 +81,12 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/lucialand/lucia-docs/edit/master/',
+          editUrl: 'https://github.com/lucialand/lucia-docs/edit/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/lucialand/lucia-docs/edit/master/blog/',
+          editUrl: 'https://github.com/lucialand/lucia-docs/edit/master/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
