@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Lucia',
   tagline: 'A tiny library for tiny web apps',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://lucia.js.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/logo.ico',
