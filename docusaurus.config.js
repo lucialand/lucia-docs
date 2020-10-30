@@ -71,7 +71,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} shadowtime2000. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} The Lucia Authors. Built with Docusaurus.`,
     },
   },
   presets: [
