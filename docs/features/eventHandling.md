@@ -15,8 +15,8 @@ You can attach event handlers to elements.
 function EventHandlers() {
   return {
     message: 'Hello world!',
-    announce() {
-      alert(this.message);
+    announce(message) {
+      alert(message);
     },
   };
 }
