@@ -39,7 +39,7 @@ module.exports = {
           items: [
             {
               label: 'Essentials',
-              to: 'docs/',
+              to: 'docs/installation',
             },
           ],
         },
