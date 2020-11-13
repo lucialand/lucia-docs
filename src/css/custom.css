@@ -1,3 +1,5 @@
+@import url('https://rsms.me/inter/inter.css');
+
 /* stylelint-disable docusaurus/copyright-header */
 /**
  * Any CSS included here will be global. The classic template
@@ -7,14 +9,24 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #9370DB;
-  --ifm-color-primary-dark: #8A2BE2;
-  --ifm-color-primary-darker: #9400D3;
-  --ifm-color-primary-darkest: #9932CC;
-  --ifm-color-primary-light: #EE82EE;
-  --ifm-color-primary-lighter: #FF00FF;
-  --ifm-color-primary-lightest: #FF00FF;
+  --ifm-color-primary: #9370db;
+  --ifm-color-primary-dark: #8a2be2;
+  --ifm-color-primary-darker: #9400d3;
+  --ifm-color-primary-darkest: #9932cc;
+  --ifm-color-primary-light: #ee82ee;
+  --ifm-color-primary-lighter: #ff00ff;
+  --ifm-color-primary-lightest: #ff00ff;
   --ifm-code-font-size: 95%;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
 }
 
 .docusaurus-highlight-code-line {
@@ -22,4 +34,9 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+.alert--success {
+  background: #9470dbdc;
+  border-color: #9470dbdc;
 }

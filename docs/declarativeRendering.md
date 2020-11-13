@@ -3,7 +3,7 @@ id: declarativeRendering
 title: Declarative Rendering
 ---
 
-Lucia allows you to set the `innerHtml` and the `textContent` of an element with `l-html` and `l-text` respectively.
+Lucia allows you to set the `innerHTML` and the `textContent` of an element with `l-html` and `l-text` respectively.
 
 ```html
 <div l-use="DeclarativeRendering">

@@ -3,7 +3,7 @@ id: conditionals
 title: Conditionals
 ---
 
-You can toggle the `display: none` CSS attribute of an element.
+You can toggle the the presence or the `display: none` CSS attribute of an element using the `l-if` directive.
 
 ```html
 <div l-use="Conditionals">

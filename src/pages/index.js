@@ -32,7 +32,7 @@ const features = [
     //imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Lucia is extremely light (~4kb min+brotli) and performant as it does not use a traditional
+        Lucia is extremely light (~3kb min+brotli) and performant as it does not use a traditional
         Virtual DOM, rather it renders directives only if necessary by skipping static nodes through
         selectors.
       </>
@@ -73,7 +73,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted
               )}
-              to={useBaseUrl('docs/')}
+              to={useBaseUrl('docs/installation')}
             >
               Get Started
             </Link>

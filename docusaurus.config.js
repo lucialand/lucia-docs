@@ -19,12 +19,11 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/',
+          to: 'docs/installation',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
         },
-        { to: 'blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/aidenybai/lucia',
           label: 'GitHub',
@@ -39,12 +38,8 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Getting Started',
+              label: 'Essentials',
               to: 'docs/',
-            },
-            {
-              label: 'Features',
-              to: 'docs/features/',
             },
           ],
         },
@@ -61,17 +56,13 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/aidenybai/lucia',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} The Lucia Authors. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} The Lucia Authors.`,
     },
   },
   presets: [
@@ -82,11 +73,6 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/lucialand/lucia-docs/edit/main/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl: 'https://github.com/lucialand/lucia-docs/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
