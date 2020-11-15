@@ -3,7 +3,7 @@ id: accessingLuciaState
 title: Accessing Lucia State
 ---
 
-You can also access Lucia state data if you capture the return value of `Lucia.use`. a Lucia component instance is made up of `$vdom`, which contains the reference Virtual DOM, as well as `$view`, which contains the view state of the application.
+You can also access Lucia state data if you capture the return value of `Lucia.use`. a Lucia component instance is made up of `<App>.vdom`, which contains the reference Virtual DOM, as well as `<App>.view`, which contains the view state of the application.
 
 ```html
 <div l-use="App">
@@ -16,7 +16,5 @@ const App = Lucia.use('App', {
   message: 'Hello World',
 });
 
-console.log(App.$view);
-
-App.$view.message = 'Hello Foo!';
+App.view.message = 'Hello Foo!';
 ```
