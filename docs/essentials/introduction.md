@@ -12,22 +12,22 @@ Lucia is a tiny JavaScript (UMD compatible) library that serves as a bridge betw
 ## Getting Started
 
 :::tip
-Make sure you have [installed Lucia](/docs/installation) on to your project.
+Make sure you have [installed Lucia](/docs/essentials/installation) on to your project.
 :::
 
 To pickup Lucia quickly, you should understand how Lucia operates. Lucia requires markup logic to be containerized inside directives, which contain JavaScript expressions with state included.
 
 | Directive                              | Description                                                                             |
 | -------------------------------------- | --------------------------------------------------------------------------------------- |
-| [`l-init`](/docs/componentScope)       | Declares and initializes a new component scope.                                         |
-| [`l-use`](/docs/componentScope)        | Declares a new component scope that needs manual initialization.                        |
-| [`l-text`](/docs/declarativeRendering) | Works similarly to `l-bind`, but will update the `textContent` of an element.           |
-| [`l-html`](/docs/declarativeRendering) | Works similarly to `l-bind`, but will update the `innerHTML` of .an element.            |
-| [`l-if`](/docs/conditionals)           | Toggles `display: none;` on the element depending on expression (true or false).        |
-| [`l-on`](/docs/eventHandling)          | Attaches an event listener to the element. Executes JavaScript expression when emitted. |
-| [`l-bind`](/docs/attributeBinding)     | Sets the value of an attribute to the result of a JavaScript expression.                |
-| [`l-join`](/docs/joiningItems)         | Create new DOM nodes for each item in an array.                                         |
-| [`l-model`](/docs/formInputBindings)   | Adds "two-way data binding" to an element. Keeps input element in sync with view data.  |
+| [`l-init`](/docs/essentials/componentScope)       | Declares and initializes a new component scope.                                         |
+| [`l-use`](/docs/essentials/componentScope)        | Declares a new component scope that needs manual initialization.                        |
+| [`l-text`](/docs/essentials/declarativeRendering) | Works similarly to `l-bind`, but will update the `textContent` of an element.           |
+| [`l-html`](/docs/essentials/declarativeRendering) | Works similarly to `l-bind`, but will update the `innerHTML` of an element.            |
+| [`l-if`](/docs/essentials/conditionals)           | Toggles `display: none;` on the element depending on expression (true or false).        |
+| [`l-on`](/docs/essentials/eventHandling)          | Attaches an event listener to the element. Executes JavaScript expression when emitted. |
+| [`l-bind`](/docs/essentials/attributeBinding)     | Sets the value of an attribute to the result of a JavaScript expression.                |
+| [`l-join`](/docs/essentials/joiningItems)         | Create new DOM nodes for each item in an array.                                         |
+| [`l-model`](/docs/essentials/formInputBindings)   | Adds "two-way data binding" to an element. Keeps input element in sync with view data.  |
 
 ## Clicker Game Example
 

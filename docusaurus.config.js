@@ -19,7 +19,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/installation',
+          to: 'docs/essentials/installation',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
@@ -39,7 +39,7 @@ module.exports = {
           items: [
             {
               label: 'Essentials',
-              to: 'docs/installation',
+              to: 'docs/essentials/installation',
             },
           ],
         },

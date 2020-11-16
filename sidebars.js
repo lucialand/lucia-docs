@@ -1,16 +1,16 @@
 module.exports = {
   someSidebar: {
     Essentials: [
-      'installation',
-      'introduction',
-      'componentScope',
-      'declarativeRendering',
-      'conditionals',
-      'eventHandling',
-      'attributeBinding',
-      'joiningItems',
-      'formInputBindings',
-      'accessingLuciaState',
-    ],
+      'essentials/installation',
+      'essentials/introduction',
+      'essentials/componentScope',
+      'essentials/declarativeRendering',
+      'essentials/conditionals',
+      'essentials/eventHandling',
+      'essentials/attributeBinding',
+      'essentials/joiningItems',
+      'essentials/formInputBindings',
+      'essentials/accessingLuciaState',
+    ]
   },
 };
