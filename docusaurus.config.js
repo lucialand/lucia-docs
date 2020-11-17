@@ -7,6 +7,7 @@ module.exports = {
   favicon: 'img/logo.ico',
   organizationName: 'lucialand', // Usually your GitHub org/user name.
   projectName: 'lucia-docs', // Usually your repo name.
+  plugins: [require.resolve('docusaurus-lunr-search')],
   themeConfig: {
     prism: {
       theme: require('prism-react-renderer/themes/github'),
