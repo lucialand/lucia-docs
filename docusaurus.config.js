@@ -19,10 +19,16 @@ module.exports = {
       },
       items: [
         {
+          to: 'docs/essentials/introduction',
+          activeBasePath: 'docs',
+          label: 'Getting Started',
+          position: 'right',
+        },
+        {
           to: 'docs/essentials/installation',
           activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          label: 'Installation',
+          position: 'right',
         },
         {
           href: 'https://github.com/aidenybai/lucia',
@@ -32,7 +38,6 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
       links: [
         {
           title: 'Docs',
@@ -64,6 +69,11 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} The Lucia Authors.`,
     },
+    // algolia: {
+    //   apiKey: 'api-key',
+    //   indexName: 'lucia',
+    //   algoliaOptions: {}
+    // },
   },
   presets: [
     [
