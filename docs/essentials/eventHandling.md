@@ -39,21 +39,3 @@ Lucia.use('EventProperties', {
   },
 });
 ```
-
-## `effect` Event
-
-Lucia also provides a custom `effect` event as a callback for when the element is updated.
-
-```html
-<div l-use="EffectEvent">
-  <p l-on:effect="effect()">Will alert if changed.</p>
-</div>
-```
-
-```js
-Lucia.use('EffectEvent', {
-  effect() {
-    alert('Updated!');
-  },
-});
-```

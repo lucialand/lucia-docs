@@ -7,7 +7,6 @@ module.exports = {
   favicon: 'img/logo.ico',
   organizationName: 'lucialand', // Usually your GitHub org/user name.
   projectName: 'lucia-docs', // Usually your repo name.
-  plugins: [require.resolve('docusaurus-lunr-search')],
   themeConfig: {
     prism: {
       theme: require('prism-react-renderer/themes/github'),
@@ -70,11 +69,10 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} The Lucia Authors.`,
     },
-    // algolia: {
-    //   apiKey: 'api-key',
-    //   indexName: 'lucia',
-    //   algoliaOptions: {}
-    // },
+    algolia: {
+      apiKey: '005d225d1319cf1f39881d336adb99e5',
+      indexName: 'lucia',
+    },
   },
   presets: [
     [

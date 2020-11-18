@@ -3,11 +3,13 @@ id: introduction
 title: Introduction
 ---
 
-Lucia is a tiny JavaScript (UMD compatible) library that serves as a bridge between vanilla JavaScript and Vue. Some features of Lucia are:
+Lucia is a tiny JavaScript library for building web apps.
 
-- **Declarative**: Lucia provides a declarative API similar to Vue/Alpine to create views, making development predictable and intuitive through markup-centric code.
-- **Reactive**: When the view is changed, the internal reference Virtual DOM will automatically react and will update and render the new view in realtime.
-- **Lightweight**: Lucia is extremely light (~3kb min+brotli) and performant as it does not use a traditional Virtual DOM, rather it renders directives only if necessary by skipping static nodes through selectors.
+- **Declarative:** Lucia provides a declarative API similar to Vue/Alpine to create views, making development predictable and intuitive through markup-centric code.
+- **Reactive:** When the view is changed, the internal reference Virtual DOM will automatically react and will update and render the new view in realtime.
+- **Lightweight:** Lucia is extremely light and performant as it does not use a traditional Virtual DOM, rather it renders directives only if necessary by skipping static nodes through selectors.
+
+![TravisCI Build](https://badgen.net/travis/aidenybai/lucia?color=7460E1&labelColor=1D1E32&style=flat-square&label=build) ![Code Size](https://badgen.net/badgesize/brotli/https/unpkg.com/lucia?color=7460E1&labelColor=1D1E32&style=flat-square&label=size) ![NPM Version](https://img.shields.io/npm/v/lucia?color=7460E1&labelColor=1D1E32&style=flat-square) ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?color=7460E1&labelColor=1D1E32&style=flat-square) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=7460E1&labelColor=1D1E32&style=flat-square) ![Code Coverage](https://img.shields.io/coveralls/github/aidenybai/lucia?color=7460E1&labelColor=1D1E32&style=flat-square)
 
 ## Getting Started
 
@@ -17,12 +19,12 @@ Make sure you have [installed Lucia](/docs/essentials/installation) on to your p
 
 To pickup Lucia quickly, you should understand how Lucia operates. Lucia requires markup logic to be containerized inside directives, which contain JavaScript expressions with state included.
 
-| Directive                              | Description                                                                             |
-| -------------------------------------- | --------------------------------------------------------------------------------------- |
+| Directive                                         | Description                                                                             |
+| ------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | [`l-init`](/docs/essentials/componentScope)       | Declares and initializes a new component scope.                                         |
 | [`l-use`](/docs/essentials/componentScope)        | Declares a new component scope that needs manual initialization.                        |
 | [`l-text`](/docs/essentials/declarativeRendering) | Works similarly to `l-bind`, but will update the `textContent` of an element.           |
-| [`l-html`](/docs/essentials/declarativeRendering) | Works similarly to `l-bind`, but will update the `innerHTML` of an element.            |
+| [`l-html`](/docs/essentials/declarativeRendering) | Works similarly to `l-bind`, but will update the `innerHTML` of an element.             |
 | [`l-if`](/docs/essentials/conditionals)           | Toggles `display: none;` on the element depending on expression (true or false).        |
 | [`l-on`](/docs/essentials/eventHandling)          | Attaches an event listener to the element. Executes JavaScript expression when emitted. |
 | [`l-bind`](/docs/essentials/attributeBinding)     | Sets the value of an attribute to the result of a JavaScript expression.                |

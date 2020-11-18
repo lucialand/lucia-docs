@@ -16,17 +16,11 @@ Latest version: ![NPM Version](https://img.shields.io/npm/v/lucia?color=7460E1&l
 
 Expanded releases and commits are available on the [GitHub](https://github.com/aidenybai/lucia/releases)
 
-## CDN 
+## CDN
 
 Lucia is currently is installable through a CDN and also supports UMD (Node, Browser, Isomorphic/Universal). Put this within your `<head>` tags in html.
 
 ```html
-<!-- development version, includes helpful console warnings -->
-<script src="https://unpkg.com/lucia/dist/lucia.js"></script>
-```
-
-```html
-<!-- production version, optimized for size and speed -->
 <script src="https://unpkg.com/lucia"></script>
 ```
 
@@ -37,5 +31,5 @@ Generally if you're going to be using Lucia long term you should specify a speci
 Another option is installing via if you are using a module bundler such as [Webpack](https://webpack.js.org/) or [Rollup](https://rollupjs.org).
 
 ```sh
-$ npm install lucia
+npm install lucia
 ```
