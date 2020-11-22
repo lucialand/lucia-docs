@@ -4,7 +4,7 @@ module.exports = {
       'essentials/installation',
       'essentials/introduction',
       'essentials/componentScope',
-      'essentials/declarativeRendering',
+      'essentials/textInterpolation',
       'essentials/conditionals',
       'essentials/eventHandling',
       'essentials/attributeBinding',

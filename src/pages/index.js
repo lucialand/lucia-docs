@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'Declarative',
-    //imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    imageUrl: 'img/bullhorn-solid.svg',
     description: (
       <>
         Lucia provides a declarative API similar to Vue/Alpine to create views, making development
@@ -19,7 +19,7 @@ const features = [
   },
   {
     title: 'Reactive',
-    //imageUrl: 'img/undraw_docusaurus_tree.svg',
+    imageUrl: 'img/magic-solid.svg',
     description: (
       <>
         When the view is changed, the internal reference Virtual DOM will automatically react and
@@ -29,7 +29,7 @@ const features = [
   },
   {
     title: 'Lightweight',
-    //imageUrl: 'img/undraw_docusaurus_react.svg',
+    imageUrl: 'img/feather-solid.svg',
     description: (
       <>
         Lucia is extremely light (~3kb min+brotli) and performant as it does not use a traditional
@@ -49,7 +49,7 @@ function Feature({ imageUrl, title, description }) {
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
-      <h3>{title}</h3>
+      <h3 class="text--center">{title}</h3>
       <p>{description}</p>
     </div>
   );
