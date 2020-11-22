@@ -9,7 +9,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #9370db;
+  --ifm-color-primary: #7460E1;
   --ifm-color-primary-dark: #8a2be2;
   --ifm-color-primary-darker: #9400d3;
   --ifm-color-primary-darkest: #9932cc;
@@ -37,6 +37,6 @@ html {
 }
 
 .alert--success {
-  background: #9470dbdc;
-  border-color: #9470dbdc;
+  background: #7360e1be;
+  border-color: #7360e1be;
 }
