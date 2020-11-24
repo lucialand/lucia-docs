@@ -42,11 +42,11 @@ html {
   border-color: #7360e1be;
 }
 
-[data-theme='dark'] {
+html[data-theme='dark'] {
   --inversion: 1;
 }
 
 /* Extremely scuffed way of changing svg color, look into diff options later */
-img.featureImage_src-pages- {
+img {
   filter: invert(var(--inversion));
 }
