@@ -9,7 +9,7 @@ module.exports = {
   projectName: 'lucia-docs', // Usually your repo name.
   themeConfig: {
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
+      theme: require('prism-react-renderer/themes/vsDark'),
     },
     navbar: {
       title: 'Lucia',

@@ -32,9 +32,8 @@ const features = [
     imageUrl: 'img/feather-solid.svg',
     description: (
       <>
-        Lucia is extremely light (~3kb min+brotli) and performant as it does not use a traditional
-        Virtual DOM, rather it renders directives only if necessary by skipping static nodes through
-        selectors.
+        Lucia is extremely light and performant as it does not use a traditional Virtual DOM, rather
+        it renders directives only if necessary by skipping static nodes through DOM references.
       </>
     ),
   },
@@ -50,7 +49,7 @@ function Feature({ imageUrl, title, description }) {
         </div>
       )}
       <h3 class="text--center">{title}</h3>
-      <p>{description}</p>
+      <p class="text--center">{description}</p>
     </div>
   );
 }
@@ -69,7 +68,7 @@ function Home() {
             style={{
               color: 'white',
               fontWeight: 'bold',
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             Black Lives Matter.
@@ -80,7 +79,7 @@ function Home() {
                 fontWeight: 'bold',
                 margin: '0 10px',
                 padding: '7px 20px',
-                border: '1px solid white'
+                border: '1px solid white',
               }}
               href="https://support.eji.org/give/153413"
               target="_blank"
@@ -97,10 +96,7 @@ function Home() {
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
-              className={clsx(
-                'button button--secondary button--lg',
-                styles.getStarted
-              )}
+              className={clsx('button button--secondary button--lg', styles.getStarted)}
               to={useBaseUrl('docs/essentials/installation')}
             >
               Get Started
