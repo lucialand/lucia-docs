@@ -21,7 +21,6 @@
 
 html {
   font-family: 'Inter', sans-serif;
-  color: #1D1E32;
 }
 
 @supports (font-variation-settings: normal) {
