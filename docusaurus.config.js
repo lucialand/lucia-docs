@@ -38,35 +38,35 @@ module.exports = {
       ],
     },
     footer: {
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Essentials',
-              to: 'docs/essentials/installation',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/q2pSU39',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/aidenybai/lucia',
-            },
-          ],
-        },
-      ],
+      // links: [
+      //   {
+      //     title: 'Docs',
+      //     items: [
+      //       {
+      //         label: 'Essentials',
+      //         to: 'docs/essentials/installation',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: 'Community',
+      //     items: [
+      //       {
+      //         label: 'Discord',
+      //         href: 'https://discord.gg/q2pSU39',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: 'More',
+      //     items: [
+      //       {
+      //         label: 'GitHub',
+      //         href: 'https://github.com/aidenybai/lucia',
+      //       },
+      //     ],
+      //   },
+      // ],
       copyright: `Copyright © ${new Date().getFullYear()} The Lucia Authors.`,
     },
     algolia: {
@@ -80,7 +80,6 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl: 'https://github.com/lucialand/lucia-docs/edit/main/',
         },
         theme: {

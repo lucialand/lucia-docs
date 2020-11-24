@@ -3,7 +3,7 @@ id: eventHandling
 title: Event Handling
 ---
 
-You can attach event handlers to elements, limited to `.onevent` handler events using the `l-on` directive. 
+You can attach event handlers to elements, limited to `.onevent` handler events using the `l-on` directive.
 
 ```html
 <div l-use="EventHandlers">

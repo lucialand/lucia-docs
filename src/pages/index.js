@@ -62,7 +62,7 @@ function Home() {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <div style={{ background: '#111', padding: '10px 0', lineHeight: 2 }}>
+      <div style={{ background: '#1D1E32', padding: '10px 0', lineHeight: 2 }}>
         <div className="container">
           <div
             style={{
