@@ -9,7 +9,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #7460E1;
+  --ifm-color-primary: #7460e1;
   --ifm-color-primary-dark: #8a2be2;
   --ifm-color-primary-darker: #9400d3;
   --ifm-color-primary-darkest: #9932cc;
@@ -17,6 +17,7 @@
   --ifm-color-primary-lighter: #ff00ff;
   --ifm-color-primary-lightest: #ff00ff;
   --ifm-code-font-size: 95%;
+  --inversion: 0;
 }
 
 html {
@@ -39,4 +40,13 @@ html {
 .alert--success {
   background: #7360e1be;
   border-color: #7360e1be;
+}
+
+[data-theme='dark'] {
+  --inversion: 1;
+}
+
+/* Extremely scuffed way of changing svg color, look into diff options later */
+img.featureImage_src-pages- {
+  filter: invert(var(--inversion));
 }
