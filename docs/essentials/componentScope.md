@@ -7,7 +7,7 @@ Lucia allows you to create component scopes with inline Javascript objects with 
 
 ```html
 <div l-init="{ message: 'Hello World' }">
-  <p l-text="message"></p>
+  <p l-text="this.message"></p>
 </div>
 ```
 
