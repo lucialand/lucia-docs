@@ -25,7 +25,7 @@ By default, Lucia runs a search of all elements with the `l-init` directive and 
 Lucia.init();
 ```
 
-If you need to access [Lucia's state](/docs/essentials/accessingLuciaState), use the `l-use` directive in combination with `Lucia.use(...)`. Declaring a Lucia scope in JavaScript automatically initializes it, so if you want initialize at a later time, prepare the view object beforehand. 
+If you need to access [Lucia's state](/docs/essentials/accessingLuciaState), use the `l-use` directive in combination with `Lucia.use(...)`. Declaring a Lucia scope in JavaScript automatically initializes it, so if you want initialize at a later time, prepare the view object beforehand.
 
 ```html
 <div l-use="HelloWorld">
@@ -37,4 +37,24 @@ If you need to access [Lucia's state](/docs/essentials/accessingLuciaState), use
 Lucia.use('HelloWorld', {
   message: 'Hello World',
 });
+```
+
+## Custom Components
+
+You can also create custom components you use in your component scope. Any arguments after the view are valid components and will be used if used in the HTML.
+
+```html
+<div l-use="HelloWorld">
+  <Message></Message>
+</div>
+```
+
+```js
+Lucia.use(
+  'HelloWorld',
+  {
+    message: 'Hello World',
+  },
+  Lucia.component('Message', '<p l-text="this.message"></p>')
+);
 ```
