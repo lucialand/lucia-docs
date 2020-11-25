@@ -7,7 +7,7 @@ You can attach event handlers to elements, limited to `.on<event>` handler event
 
 ```html
 <div l-use="EventHandlers">
-  <button l-on:click="announce()" l-text="message"></button>
+  <button l-on:click="this.announce()" l-text="this.message"></button>
 </div>
 ```
 
@@ -26,7 +26,7 @@ You can also attach specific properties to event handler directives by appending
 
 ```html
 <div l-use="EventProperties">
-  <form l-on:submit.prevent="notSubmitted()">
+  <form l-on:submit.prevent="this.notSubmitted()">
     <button type="submit">Submit</button>
   </form>
 </div>

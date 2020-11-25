@@ -7,7 +7,7 @@ Lucia allows you to set the `innerHTML` and the `textContent` of an element with
 
 ```html
 <div l-init="{ text: 'I am regular!', html: '<b>I am bold!</b>' }">
-  <p l-text="text"></p>
-  <p l-html="html"></p>
+  <p l-text="this.text"></p>
+  <p l-html="this.html"></p>
 </div>
 ```

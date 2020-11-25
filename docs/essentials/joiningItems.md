@@ -7,7 +7,7 @@ Lucia also support list rendering, where you are able to join arrays together an
 
 ```html
 <div l-use="ListRendering">
-  <p l-join="fruits by , "></p>
+  <p l-join="this.fruits by , "></p>
 </div>
 ```
 

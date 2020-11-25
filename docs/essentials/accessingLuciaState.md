@@ -7,7 +7,7 @@ You can also access Lucia state data if you capture the return value of `Lucia.u
 
 ```html
 <div l-use="App">
-  <p l-text="message"></p>
+  <p l-text="this.message"></p>
 </div>
 ```
 

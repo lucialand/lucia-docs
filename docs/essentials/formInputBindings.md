@@ -7,8 +7,8 @@ Lucia also supports two-way binding through the `l-model` directive, which is a 
 
 ```html
 <div l-use="FormInputBindings">
-  <input l-model="message" />
-  <p l-text="message"></p>
+  <input l-model="this.message" />
+  <p l-text="this.message"></p>
 </div>
 ```
 

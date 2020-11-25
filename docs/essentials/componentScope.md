@@ -17,7 +17,7 @@ By default, Lucia runs a search of all elements with the `l-init` directive and 
 
 ```html
 <div l-use="{ message: 'Hello World' }">
-  <p l-text="message"></p>
+  <p l-text="this.message"></p>
 </div>
 ```
 
@@ -29,7 +29,7 @@ If you need to access [Lucia's state](/docs/essentials/accessingLuciaState), use
 
 ```html
 <div l-use="HelloWorld">
-  <p l-text="message"></p>
+  <p l-text="this.message"></p>
 </div>
 ```
 
