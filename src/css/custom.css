@@ -45,8 +45,3 @@ html {
 html[data-theme='dark'] {
   --inversion: 1;
 }
-
-/* Extremely scuffed way of changing svg color, look into diff options later */
-img {
-  filter: invert(var(--inversion));
-}

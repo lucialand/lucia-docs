@@ -1,6 +1,6 @@
 ---
 id: componentScope
-title: Declaring a Component Scope
+title: Components
 ---
 
 Lucia allows you to create component scopes with inline Javascript objects with the `l-init` directive. This means you can pass view data that can later be accessed in directives inside that scope, and will automatically be initialized on the `DOMContentLoaded` event.
