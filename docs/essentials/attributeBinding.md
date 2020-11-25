@@ -3,7 +3,7 @@ id: attributeBinding
 title: Attribute Binding
 ---
 
-You can also bind attributes to elements. Below is an example of URL binding to an `<a>` tag using the `l-bind` directive.
+You can also bind attributes to elements. Below is an example of URL binding to an `<a>` tag using the `l-bind` directive. If the computed value is false or undefined, the attribute will be detached.
 
 ```html
 <div l-use="AttributeBinding">
@@ -19,7 +19,7 @@ Lucia.use('AttributeBinding', {
 
 ## Binding Styles and Classes
 
-For styles and classes, you should use object syntax to toggle classes or specify styles.
+For styles and classes, you should use object syntax to toggle classes or specify styles. Classes rely on togglable boolean dependency, while styles require you specify a style value.
 
 ```html
 <div l-use="StylesAndClasses">

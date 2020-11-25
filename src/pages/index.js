@@ -33,7 +33,7 @@ const features = [
     description: (
       <>
         Lucia is extremely light and performant as it does not use a traditional Virtual DOM, rather
-        it renders directives only if necessary by skipping static nodes through DOM references.
+        it renders directives only if necessary by skipping static nodes through element references.
       </>
     ),
   },

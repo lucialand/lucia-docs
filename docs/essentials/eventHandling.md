@@ -3,7 +3,7 @@ id: eventHandling
 title: Event Handling
 ---
 
-You can attach event handlers to elements, limited to `.onevent` handler events using the `l-on` directive.
+You can attach event handlers to elements, limited to `.on<event>` handler events using the `l-on` directive. Some of these include `onclick`, `onkeypress`, and `onsubmit`. More details about events can be found [on MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Event_handlers).
 
 ```html
 <div l-use="EventHandlers">
@@ -22,7 +22,7 @@ Lucia.use('EventHandlers', {
 
 ## Event Properties
 
-You can also attach specific properties to event handler directives by appending `.prop`.
+You can also attach specific properties to event handler directives by appending `.prop`. Supported properties are: `.stop`, which invokes `.stopPropogation()` on the Event, and `.prevent`. which invokes `.preventDefault()` on the Event.
 
 ```html
 <div l-use="EventProperties">
