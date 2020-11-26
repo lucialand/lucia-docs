@@ -3,6 +3,10 @@ id: componentScope
 title: Components
 ---
 
+:::tip 
+If you are using the CommonJS or ECMAScript builds of Lucia, there is no automatic initialization. Refer to [manually initializing Lucia](#manual-initialization).
+:::
+
 Lucia allows you to create component scopes with inline Javascript objects with the `l-init` directive. This means you can pass view data that can later be accessed in directives inside that scope, and will automatically be initialized on the `DOMContentLoaded` event.
 
 ```html
