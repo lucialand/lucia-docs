@@ -49,7 +49,7 @@ You can also create custom components you use in your component scope. Any argum
 
 ```html
 <div l-use="HelloWorld">
-  <Message></Message>
+  <Message />
 </div>
 ```
 
