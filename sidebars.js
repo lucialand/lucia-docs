@@ -11,6 +11,7 @@ module.exports = {
       'essentials/joiningItems',
       'essentials/formInputBindings',
       'essentials/accessingLuciaState',
+      'essentials/virtualDOM'
     ]
   },
 };
