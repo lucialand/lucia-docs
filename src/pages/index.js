@@ -12,7 +12,7 @@ const features = [
     imageUrl: 'img/bullhorn-solid.svg',
     description: (
       <>
-        Lucia provides a declarative API similar to Vue/Alpine to create views, making development
+        Lucia provides a declarative API similar to Vue to create views, making development
         predictable and intuitive through markup-centric code.
       </>
     ),
@@ -22,8 +22,8 @@ const features = [
     imageUrl: 'img/magic-solid.svg',
     description: (
       <>
-        When the view is changed, the internal reference Virtual DOM will automatically react and
-        will update and render the new view in realtime.
+        When the view is changed and trapped by the observer, the internal Virtual DOM will
+        automatically react and will update and render the new view in realtime.
       </>
     ),
   },
@@ -32,8 +32,8 @@ const features = [
     imageUrl: 'img/feather-solid.svg',
     description: (
       <>
-        Lucia is extremely light and performant as it does not use a traditional Virtual DOM, rather
-        it renders directives only if necessary by skipping static nodes through element references.
+        Lucia is extremely light and performant as it renders directives only if necessary by
+        skipping static nodes through element references.
       </>
     ),
   },
