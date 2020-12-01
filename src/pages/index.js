@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
+import CodeBlock from '@theme/CodeBlock';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -97,7 +98,12 @@ function Home() {
       </div>
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
+          <img
+            className={clsx(styles.heroBannerLogo, 'margin-vert--md')}
+            alt="Lucia logo"
+            src={useBaseUrl('img/logo.svg')}
+          />
+          <h2 className="hero__title">{siteConfig.title}</h2>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
@@ -122,6 +128,47 @@ function Home() {
           </section>
         )}
       </main>
+      <div className={styles.gettingStartedSection}>
+        <div className="container padding-vert--xl text--left">
+          <div className="row">
+            <div className="col col--4 col--offset-1">
+              <h2>Get started in seconds</h2>
+              <p>
+                Lucia allows development to be completely done in the markup, allowing you to{' '}
+                <strong>focus on code, not abstraction hell</strong>.
+                <br />
+                <br />
+                To get started with Lucia, import this CDN link as a script:
+              </p>
+              <CodeBlock className="language-sh">https://unpkg.com/lucia</CodeBlock>
+              <br />
+            </div>
+            <div className="col col--5 col--offset-1">
+              <img alt="Easy to get started in seconds" src={useBaseUrl('img/demo1.svg')} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="container padding-vert--xl text--left">
+          <div className="row">
+            <div className="col col--4 col--offset-1">
+              <img alt="Easy to update" src={useBaseUrl('img/demo2.svg')} />
+            </div>
+            <div className="col col--5 col--offset-1">
+              <h2>Easy to Maintain</h2>
+              <p>
+                Writing small-scale applications shouldn't be hard. Lucia helps you write <strong>simple,
+                declarative, and unopiniated</strong> code, while having a light footprint on performance.
+                <br />
+                <br />
+                Lucia not only supports markup oriented code, but also supports APIs for JavaScript
+                usage, such as components, view access and more!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 }

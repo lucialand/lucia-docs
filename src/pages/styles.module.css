@@ -40,3 +40,25 @@
 .featureTitle {
   margin: 1rem 0;
 }
+
+.heroBanner {
+  padding: 2.5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: #fff !important;
+}
+
+.heroBannerLogo {
+  max-width: 120px;
+  max-height: 120px;
+  filter: brightness(10);
+}
+
+.gettingStartedSection {
+  background-color: #f7f7f7;
+}
+
+html[data-theme='dark'] .gettingStartedSection {
+  background-color: #33363b;
+}
