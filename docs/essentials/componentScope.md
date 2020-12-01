@@ -3,7 +3,7 @@ id: componentScope
 title: Components
 ---
 
-:::tip 
+:::tip
 If you are using the CommonJS or ES Module builds of Lucia, there is no automatic initialization. Refer to [manually initializing Lucia](#manual-initialization).
 :::
 
@@ -38,27 +38,25 @@ If you need to access [Lucia's state](/docs/essentials/accessingLuciaState), use
 ```
 
 ```js
-Lucia.use('HelloWorld', {
-  message: 'Hello World',
-});
+Lucia.use('HelloWorld', { message: 'Hello World' });
 ```
 
 ## Custom Components
 
-You can also create custom components you use in your component scope. Any arguments after the view are valid components and will be used if used in the HTML.
+You can also create custom components you use in your component scope. Any arguments after the view are valid components and will be used if used in the HTML. For the template, a callback must be passed. 
+
+The parameters executed on the callback are `args`, which are binded using a directive on the custom component, `children`, which contain the incapsulated code inside the custom component tags, and `view`, which contains the view.
 
 ```html
 <div l-use="HelloWorld">
-  <Message></Message>
+  <Message l-bind="'world'"></Message>
 </div>
 ```
 
 ```js
-Lucia.use(
-  'HelloWorld',
-  {
-    message: 'Hello World',
-  },
-  Lucia.component('Message', '<p l-text="this.message"></p>')
-);
+const message = Lucia.component('Message', ({ args, children, view }) => {
+  return `<p l-text="this.message + args[0]">${args[0]}</p>`;
+});
+
+Lucia.use('HelloWorld', { message: 'Hello ' }, message);
 ```
