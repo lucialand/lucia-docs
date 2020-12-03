@@ -43,20 +43,21 @@ Lucia.use('HelloWorld', { message: 'Hello World' });
 
 ## Custom Components
 
-You can also create custom components you use in your component scope. Any arguments after the view are valid components and will be used if used in the HTML. For the template, a callback must be passed. 
+You can also create custom components you use in your component scope. Any arguments after the view are valid components and will be used if used in the HTML. For the template, a callback must be passed. Note that there can only be one root node.
 
-The parameters executed on the callback are `args`, which are binded using a directive on the custom component, `children`, which contain the incapsulated code inside the custom component tags, and `view`, which contains the view.
+The parameters executed on the callback are `children`, which contain the incapsulated code inside the custom component tags.
 
 ```html
 <div l-use="HelloWorld">
-  <Message l-bind="'world'"></Message>
+  <Message l-text="this.message + 'World'">Default Text</Message>
 </div>
 ```
 
 ```js
-const message = Lucia.component('Message', ({ args, children, view }) => {
-  return `<p l-text="this.message + args[0]">${args[0]}</p>`;
+const message = Lucia.component('Message', ({ children }) => {
+  return `<p>${children}</p>`;
 });
 
 Lucia.use('HelloWorld', { message: 'Hello ' }, message);
 ```
+ 
