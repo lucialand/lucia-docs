@@ -21,8 +21,8 @@ To pickup Lucia quickly, you should understand how Lucia operates. Lucia require
 
 | Directive                                       | Description                                                                             |
 | ----------------------------------------------- | --------------------------------------------------------------------------------------- |
-| [`l-init`](/docs/essentials/componentScope)     | Declares and initializes a new component scope.                                         |
-| [`l-use`](/docs/essentials/componentScope)      | Declares a new component scope that needs manual initialization.                        |
+| [`l-init`](/docs/essentials/components)     | Declares and initializes a new component scope.                                         |
+| [`l-use`](/docs/essentials/components)      | Declares a new component scope that needs manual initialization.                        |
 | [`l-text`](/docs/essentials/textInterpolation)  | Works similarly to `l-bind`, but will update the `textContent` of an element.           |
 | [`l-html`](/docs/essentials/textInterpolation)  | Works similarly to `l-bind`, but will update the `innerHTML` of an element.             |
 | [`l-if`](/docs/essentials/conditionals)         | Toggles `display: none;` on the element depending on expression (true or false).        |

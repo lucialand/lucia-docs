@@ -1,5 +1,5 @@
 ---
-id: componentScope
+id: components
 title: Components
 ---
 
