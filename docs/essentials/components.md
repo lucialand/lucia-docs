@@ -29,16 +29,20 @@ By default, Lucia runs a search of all elements with the `l-init` directive and 
 Lucia.init();
 ```
 
-If you need to access [Lucia's state](/docs/essentials/accessingLuciaState), use the `l-use` directive in combination with `Lucia.use(...)`. Declaring a Lucia scope in JavaScript automatically initializes it, so if you want initialize at a later time, prepare the view object beforehand.
+If you need to access [Lucia's state](/docs/essentials/accessingLuciaState), use the `createApp` and `mount` methods. Declaring a Lucia scope in JavaScript automatically initializes it, so if you want initialize at a later time, prepare the view object beforehand.
 
 ```html
-<div l-use="HelloWorld">
+<div id="HelloWorld">
   <p l-text="this.message"></p>
 </div>
 ```
 
 ```js
-Lucia.use('HelloWorld', { message: 'Hello World' });
+const state = Lucia.createApp({ message: 'Hello World' });
+
+console.log(state);
+
+state.mount('#HelloWorld'); // Pass a selector or element reference
 ```
 
 ## Custom Components
@@ -48,16 +52,17 @@ You can also create custom components you use in your component scope. Any argum
 The parameters executed on the callback are `children`, which contain the incapsulated code inside the custom component tags.
 
 ```html
-<div l-use="HelloWorld">
+<div id="HelloWorld">
   <Message l-text="this.message + 'World'">Default Text</Message>
 </div>
 ```
 
 ```js
-const message = Lucia.component('Message', ({ children }) => {
+const app = Lucia.createApp({ message: 'Hello World' });
+
+app.component('Message', ({ children }) => {
   return `<p>${children}</p>`;
 });
 
-Lucia.use('HelloWorld', { message: 'Hello ' }, message);
+app.mount('#HelloWorld');
 ```
- 

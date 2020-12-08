@@ -25,17 +25,9 @@ Lucia.use('EventHandlers', {
 You can also attach specific properties to event handler directives by appending `.prop`. Supported properties are: `.stop`, which invokes `.stopPropogation()` on the Event, and `.prevent`. which invokes `.preventDefault()` on the Event.
 
 ```html
-<div l-use="EventProperties">
+<div l-init="{ notSubmitted() { alert('Overrided') } }">
   <form l-on:submit.prevent="this.notSubmitted()">
     <button type="submit">Submit</button>
   </form>
 </div>
-```
-
-```javascript
-Lucia.use('EventProperties', {
-  notSubmitted() {
-    alert('Overrided');
-  },
-});
 ```
