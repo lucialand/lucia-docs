@@ -31,6 +31,11 @@ module.exports = {
           position: 'right',
         },
         {
+          label: 'Virtual DOM',
+          position: 'right',
+          href: 'https://github.com/aidenybai/lucia/tree/master/src/vdom#readme'
+        },
+        {
           href: 'https://github.com/aidenybai/lucia',
           label: 'GitHub',
           position: 'right',
