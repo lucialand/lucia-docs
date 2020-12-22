@@ -143,8 +143,15 @@ function Home() {
               <CodeBlock className="language-sh">https://unpkg.com/lucia</CodeBlock>
               <br />
             </div>
-            <div className="col col--5 col--offset-1">
-              <img alt="Easy to get started in seconds" src={useBaseUrl('img/demo1.svg')} />
+            <div className="col col--5 col--offset-1 text--center">
+              <img
+                alt="Easy to get started in seconds"
+                style={{
+                  width: '250px',
+                  height: '250px',
+                }}
+                src={useBaseUrl('img/demo1.svg')}
+              />
             </div>
           </div>
         </div>
@@ -152,14 +159,22 @@ function Home() {
       <div>
         <div className="container padding-vert--xl text--left">
           <div className="row">
-            <div className="col col--4 col--offset-1">
-              <img alt="Easy to update" src={useBaseUrl('img/demo2.svg')} />
+            <div className="col col--4 col--offset-1 text--center">
+              <img
+                alt="Easy to update"
+                style={{
+                  width: '210px',
+                  height: '210px',
+                }}
+                src={useBaseUrl('img/demo2.svg')}
+              />
             </div>
             <div className="col col--5 col--offset-1">
               <h2>Easy to Maintain</h2>
               <p>
-                Writing small-scale applications shouldn't be hard. Lucia helps you write <strong>simple,
-                declarative, and unopiniated</strong> code, while having a light footprint on performance.
+                Writing small-scale applications shouldn't be hard. Lucia helps you write{' '}
+                <strong>simple, declarative, and unopiniated</strong> code, while having a light
+                footprint on performance.
                 <br />
                 <br />
                 Lucia not only supports markup oriented code, but also supports APIs for JavaScript
