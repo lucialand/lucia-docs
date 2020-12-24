@@ -21,3 +21,7 @@ For styles and classes, you should use object syntax to toggle classes or specif
   <h1 l-bind:style="this.styles">Styles are sassy</h1>
 </div>
 ```
+
+## Binding Shorthands
+
+Lucia's compiler also recognizes prefix shorthands, so instead of writing `l-bind:attribute`, you can just write `:attribute`, where `l-bind:` is replaced by `:`.

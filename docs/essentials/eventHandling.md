@@ -20,6 +20,10 @@ Lucia.use('EventHandlers', {
 });
 ```
 
+## Event Shorthands
+
+Lucia's compiler also recognizes prefix shorthands, so instead of writing `l-on:event`, you can just write `@event`, where `l-on:` is replaced by `@`.
+
 ## Event Properties
 
 You can also attach specific properties to event handler directives by appending `.prop`. Supported properties are: `.stop`, which invokes `.stopPropogation()` on the Event, and `.prevent`. which invokes `.preventDefault()` on the Event.
