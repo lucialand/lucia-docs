@@ -5,7 +5,7 @@ title: Components
 
 :::tip
 If you are using the CommonJS or ES Module builds of Lucia, there is no automatic initialization. Refer to [manually initializing Lucia](#manual-initialization).
-:::
+::: 
 
 Lucia allows you to create component scopes with inline Javascript objects with the `l-state` directive. This means you can pass view data that can later be accessed in directives inside that scope, and will automatically be initialized on the `DOMContentLoaded` event. Lucia also has built-in support for turbolinks, hooking onto the `turbolinks:load` event. If you need to access the app state, reference the `__l` under the element reference.
 

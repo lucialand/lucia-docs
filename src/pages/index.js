@@ -149,6 +149,7 @@ function Home() {
                 style={{
                   width: '250px',
                   height: '250px',
+                  filter: 'invert(var(--inversion))'
                 }}
                 src={useBaseUrl('img/demo1.svg')}
               />
@@ -165,6 +166,7 @@ function Home() {
                 style={{
                   width: '210px',
                   height: '210px',
+                  filter: 'invert(var(--inversion))'
                 }}
                 src={useBaseUrl('img/demo2.svg')}
               />
