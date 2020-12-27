@@ -3,10 +3,12 @@ id: joiningItems
 title: Joining Items
 ---
 
-Lucia also support list rendering, where you are able to join arrays together and render them using the `l-join` directive. This directive requires a specific syntax, with the accepted format being `<array> as <text/html> by <delimiter>`, similar to how `<Array>.join` works in JavaScript.
+Lucia also support list rendering, where you are able to join arrays together and render them using the `l-for` directive. This directive requires a specific syntax, with the accepted format being `<item name> in <target array>`, similar to how for loops works in JavaScript.
 
 ```html
 <div l-state="{ fruits: ['apple', 'orange', 'banana'] }">
-  <p l-join="this.fruits as text by , "></p>
+  <ul l-for="fruit in this.fruits">
+    <li l-text="this.fruit"></li>
+  </ul>
 </div>
 ```
