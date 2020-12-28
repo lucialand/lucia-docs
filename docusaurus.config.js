@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Lucia',
-  tagline: 'A tiny library for tiny web apps',
+  tagline: '3kb library for tiny web apps',
   url: 'https://lucia.js.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -29,11 +29,6 @@ module.exports = {
           activeBasePath: 'docs',
           label: 'Installation',
           position: 'right',
-        },
-        {
-          label: 'Virtual DOM',
-          position: 'right',
-          href: 'https://github.com/aidenybai/lucia/tree/master/src/vdom#readme'
         },
         {
           href: 'https://github.com/aidenybai/lucia',
