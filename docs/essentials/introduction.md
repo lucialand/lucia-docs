@@ -30,7 +30,7 @@ To pickup Lucia quickly, you should understand how Lucia operates. Lucia require
 | [`l-for`](/docs/essentials/joiningItems)        | Create new DOM nodes for each item in an array.                                         |
 | [`l-model`](/docs/essentials/formInputBindings) | Adds "two-way data binding" to an element. Keeps input element in sync with view data.  |
 
-## Clicker Game Example
+## Todo App Example
 
 Below is an extremely simple implementation of a todo app using Lucia, utilizing zero JavaScript.
 
