@@ -10,7 +10,7 @@ module.exports = {
       'essentials/attributeBinding',
       'essentials/joiningItems',
       'essentials/formInputBindings',
-      'essentials/accessingLuciaState'
-    ]
+      'essentials/accessingLuciaState',
+    ],
   },
 };

@@ -9,7 +9,7 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
-    "format": "prettier --write ."
+    "cleanup": "prettier --write ."
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.66",

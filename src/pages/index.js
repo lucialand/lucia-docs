@@ -64,10 +64,7 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="3kb library for tiny web apps"
-    >
+    <Layout title={`${siteConfig.title}`} description="3kb library for tiny web apps">
       <div style={{ background: '#1D1E32', padding: '10px 0', lineHeight: 2 }}>
         <div className="container">
           <div
@@ -149,7 +146,7 @@ function Home() {
                 style={{
                   width: '250px',
                   height: '250px',
-                  filter: 'invert(var(--inversion))'
+                  filter: 'invert(var(--inversion))',
                 }}
                 src={useBaseUrl('img/demo1.svg')}
               />
@@ -166,7 +163,7 @@ function Home() {
                 style={{
                   width: '210px',
                   height: '210px',
-                  filter: 'invert(var(--inversion))'
+                  filter: 'invert(var(--inversion))',
                 }}
                 src={useBaseUrl('img/demo2.svg')}
               />
