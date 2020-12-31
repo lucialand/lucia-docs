@@ -43,8 +43,11 @@ Below is an extremely simple implementation of the standard counter app, often a
 
 ```html
 <div l-state="{ count: 0 }">
+  <!-- decrements on click, does not show if `count < 0` -->
   <button l-if="this.count > 0" l-on:click="this.count--">-</button>
+  <!-- displays `count` -->
   <span l-text="this.count">0</span>
+  <!-- increments on click, does not show if `count > MAX` -->
   <button l-if="this.count <= Number.MAX_SAFE_INTEGER" l-on:click="this.count++">+</button>
 </div>
 ```
@@ -64,7 +67,9 @@ Below is an color changer example in Lucia, when a hex color is inputed, it will
 
 ```html
 <div l-state="{ color: '' }">
+  <!-- two-way-binds `color` prop to value -->
   <input l-model="this.color" placeholder="Enter in a color or hex code" />
+  <!-- binds color style to `color`, displays `I am {count}` -->
   <p l-bind:style="{ color: this.color }" l-text="`I am ${this.color}`"></p>
 </div>
 ```
