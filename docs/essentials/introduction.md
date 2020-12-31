@@ -29,22 +29,3 @@ To pickup Lucia quickly, you should understand how Lucia operates. Lucia require
 | [`l-bind`](/docs/essentials/attributeBinding)   | Sets the value of an attribute to the result of a JavaScript expression.                |
 | [`l-for`](/docs/essentials/joiningItems)        | Create new DOM nodes for each item in an array.                                         |
 | [`l-model`](/docs/essentials/formInputBindings) | Adds "two-way data binding" to an element. Keeps input element in sync with view data.  |
-
-## Todo App Example
-
-Below is an extremely simple implementation of a todo app using Lucia, utilizing zero JavaScript.
-
-```html
-<div l-state="{ value: '', todo: [] }">
-  <!-- two-way-binds `value` prop to value -->
-  <input l-model="this.value" />
-  <!-- captures click event, pushing current `value` to `todo` -->
-  <button l-on:click="this.todo.push(this.value)">Create</button>
-  <!-- joins array together -->
-  <ul l-for="task in this.todo">
-    <li l-text="this.task"></li>
-  </ul>
-</div>
-```
-
-View the [live example here](https://codepen.io/aidenybai/pen/JjRrwjN).

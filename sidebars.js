@@ -3,6 +3,7 @@ module.exports = {
     Essentials: [
       'essentials/installation',
       'essentials/introduction',
+      'essentials/examples',
       'essentials/components',
       'essentials/textInterpolation',
       'essentials/conditionals',
