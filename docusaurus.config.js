@@ -19,15 +19,15 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/essentials/introduction',
-          activeBasePath: 'docs',
-          label: 'Getting Started',
-          position: 'right',
-        },
-        {
           to: 'docs/essentials/installation',
           activeBasePath: 'docs',
           label: 'Installation',
+          position: 'right',
+        },
+        {
+          to: 'docs/examples/todo',
+          activeBasePath: 'docs',
+          label: 'Examples',
           position: 'right',
         },
         {
@@ -38,35 +38,6 @@ module.exports = {
       ],
     },
     footer: {
-      // links: [
-      //   {
-      //     title: 'Docs',
-      //     items: [
-      //       {
-      //         label: 'Essentials',
-      //         to: 'docs/essentials/installation',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'Community',
-      //     items: [
-      //       {
-      //         label: 'Discord',
-      //         href: 'https://discord.gg/q2pSU39',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'More',
-      //     items: [
-      //       {
-      //         label: 'GitHub',
-      //         href: 'https://github.com/aidenybai/lucia',
-      //       },
-      //     ],
-      //   },
-      // ],
       copyright: `Copyright © ${new Date().getFullYear()} The Lucia Authors.`,
     },
     algolia: {

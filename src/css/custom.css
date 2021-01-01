@@ -45,3 +45,14 @@ html {
 html[data-theme='dark'] {
   --inversion: 1;
 }
+
+@media screen and (max-width: 996px) {
+  :root {
+    --ifm-font-size-base: 14px;
+  }
+}
+@media screen and (min-width: 997px) {
+  :root {
+    --ifm-font-size-base: 16px;
+  }
+}

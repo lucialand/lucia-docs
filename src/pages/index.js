@@ -64,35 +64,7 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
-    <Layout title={`${siteConfig.title}`} description="3kb library for tiny web apps">
-      <div style={{ background: '#1D1E32', padding: '10px 0', lineHeight: 2 }}>
-        <div className="container">
-          <div
-            style={{
-              color: 'white',
-              fontWeight: 'bold',
-              textAlign: 'center',
-            }}
-          >
-            Black Lives Matter.
-            <a
-              style={{
-                display: 'inline-block',
-                color: 'white',
-                fontWeight: 'bold',
-                margin: '0 10px',
-                padding: '7px 20px',
-                border: '1px solid white',
-              }}
-              href="https://support.eji.org/give/153413"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Support the Equal Justice Initiative.
-            </a>
-          </div>
-        </div>
-      </div>
+    <Layout title={`${siteConfig.title} | 3kb library for tiny web apps`} description="3kb library for tiny web apps">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <img

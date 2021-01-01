@@ -3,7 +3,6 @@ module.exports = {
     Essentials: [
       'essentials/installation',
       'essentials/introduction',
-      'essentials/examples',
       'essentials/components',
       'essentials/textInterpolation',
       'essentials/conditionals',
@@ -13,5 +12,10 @@ module.exports = {
       'essentials/formInputBindings',
       'essentials/accessingLuciaState',
     ],
+    Examples: [
+      'examples/todo',
+      'examples/counter',
+      'examples/colorChanger',
+    ]
   },
 };
