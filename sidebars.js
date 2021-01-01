@@ -12,10 +12,6 @@ module.exports = {
       'essentials/formInputBindings',
       'essentials/accessingLuciaState',
     ],
-    Examples: [
-      'examples/todo',
-      'examples/counter',
-      'examples/colorChanger',
-    ]
+    Examples: ['examples/todo', 'examples/counter', 'examples/colorChanger'],
   },
 };

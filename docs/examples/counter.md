@@ -14,7 +14,6 @@ Below is an extremely simple implementation of the standard counter app, often a
 
 View the [live example here](https://codepen.io/aidenybai/pen/zYKRmep).
 
-
 ```html
 <div l-state="{ count: 0 }">
   <!-- decrements on click, does not show if `count < 0` -->

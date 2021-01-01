@@ -28,8 +28,21 @@ Generally if you're going to be using Lucia long term you should specify a speci
 
 ## npm
 
-Another option is installing via if you are using a module bundler such as [Webpack](https://webpack.js.org/) or [Rollup](https://rollupjs.org).
+Another option is installing via if you are using a module bundler such as [Webpack](https://webpack.js.org/), [Rollup](https://rollupjs.org), or [Parcel](https://parceljs.org/). It's currently the recommended installation method when building large scale applications.
 
 ```sh
 npm install lucia
 ```
+
+You can then import it directly, or specify the exact build you want.
+
+```js
+// ES Module
+import * as Lucia from 'lucia/dist/lucia.esm';
+// CommonJS
+const Lucia = require('lucia/dist/lucia.cjs');
+```
+
+## Legacy (ES5) builds
+
+Lucia by default provides `esnext` builds under `/dist`. If you want to access `es5` builds, access under `/dist/legacy`. You can visualize the file structure by [going to the unpkg file explorer](https://unpkg.com/browse/lucia@0.3.8/dist/).

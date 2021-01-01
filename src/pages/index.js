@@ -64,7 +64,10 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
-    <Layout title={`${siteConfig.title} | 3kb library for tiny web apps`} description="3kb library for tiny web apps">
+    <Layout
+      title={`${siteConfig.title} | 3kb library for tiny web apps`}
+      description="3kb library for tiny web apps"
+    >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <img

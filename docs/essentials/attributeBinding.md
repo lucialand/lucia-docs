@@ -11,6 +11,10 @@ You can also bind attributes to elements. Below is an example of URL binding to 
 </div>
 ```
 
+## Binding Shorthands
+
+Lucia's compiler also recognizes prefix shorthands, so instead of writing `l-bind:attribute`, you can just write `:attribute`, where `l-bind:` is replaced by `:`.
+
 ## Binding Styles and Classes
 
 For styles and classes, you should use object syntax to toggle classes or specify styles. Classes rely on togglable boolean dependency, while styles require you specify a style value.
@@ -21,7 +25,3 @@ For styles and classes, you should use object syntax to toggle classes or specif
   <h1 l-bind:style="this.styles">Styles are sassy</h1>
 </div>
 ```
-
-## Binding Shorthands
-
-Lucia's compiler also recognizes prefix shorthands, so instead of writing `l-bind:attribute`, you can just write `:attribute`, where `l-bind:` is replaced by `:`.

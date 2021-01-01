@@ -14,7 +14,6 @@ Below is an color changer example in Lucia, when a hex color is inputed, it will
 
 View the [live example here](https://codepen.io/aidenybai/pen/LYRQgvg).
 
-
 ```html
 <div l-state="{ color: '' }">
   <!-- two-way-binds `color` prop to value -->

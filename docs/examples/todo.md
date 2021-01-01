@@ -3,7 +3,7 @@ id: todo
 title: Todo App Example
 ---
 
-Below is an extremely simple implementation of a todo app using Lucia, utilizing zero JavaScript.
+Below is an extremely simple implementation of a todo app using Lucia, utilizing zero JavaScript. Tasks can be added by submitting the form with the input.
 
 ### Concepts used:
 

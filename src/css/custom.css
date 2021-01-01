@@ -48,11 +48,17 @@ html[data-theme='dark'] {
 
 @media screen and (max-width: 996px) {
   :root {
-    --ifm-font-size-base: 14px;
+    --ifm-font-size-base: 15px;
+  }
+  td {
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 997px) {
   :root {
-    --ifm-font-size-base: 16px;
+    --ifm-font-size-base: 17px;
+  }
+  td {
+    font-size: 16px;
   }
 }
