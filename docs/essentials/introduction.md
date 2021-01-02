@@ -5,6 +5,8 @@ title: Introduction
 
 A tiny `3kb` JavaScript library for prototyping web applications.
 
+Sometimes, all you want to do is to try and do something—No boilerplate, bundlers, or complex build processes. Lucia aims to do this, providing an augmentation layer for your logic, allowing you to build just what you need with minimal effort and time.
+
 - **Declarative:** Lucia provides a declarative API similar to Vue to create views, making development predictable and intuitive through markup-centric code.
 - **Reactive:** When the view is changed and trapped by the observer, the internal Virtual DOM will automatically react and will update and render the new view in realtime.
 - **Lightweight:** Lucia is extremely light and performant as it renders directives only if necessary by skipping static nodes through element references.
