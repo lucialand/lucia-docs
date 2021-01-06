@@ -5,17 +5,82 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+h1,
+h2 {
+  letter-spacing: -0.03em !important;
+  font-weight: 800 !important;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.navbar__title {
+  letter-spacing: -0.06em !important;
+  font-weight: 800 !important;
+}
+
+h3,
+h4 {
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem !important;
+}
+
+h2 {
+  font-size: 2.4rem !important;
+}
+
+.heroBanner {
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+  color: black;
+  background: white;
+  transition: background 0.3s, color 0.3s;
+}
+
+html[data-theme='dark'] .heroBanner {
+  color: white;
+  background: #1c1d1f;
+}
+
+.getStarted {
+  background: black;
+  padding: 0.6em 1.8em !important;
+  border-radius: 8px;
+  font-size: 1.2em !important;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.3s, color 0.3s;
+  white-space: nowrap;
+  border: none;
+}
+
+.getStarted:hover {
+  background: black;
+  padding: 0.6em 1.8em !important;
+  border-radius: 8px;
+  font-size: 1.2em !important;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.3s, color 0.3s;
+  white-space: nowrap;
+}
+
+html[data-theme='dark'] .getStarted {
+  background-color: white;
+  color: #000;
+}
+
+.heroBanner > div,
+.aboutBanner > div {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .buttons {
@@ -24,11 +89,19 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
+  background: #7b75d4;
+  color: #fff;
 }
 
 .featureImage {
@@ -41,24 +114,22 @@
   margin: 1rem 0;
 }
 
-.heroBanner {
-  padding: 2.5rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  color: #fff !important;
-}
-
 .heroBannerLogo {
   max-width: 120px;
   max-height: 120px;
-  filter: brightness(10);
+  letter-spacing: -0.06em;
+  font-weight: 800;
 }
 
-.gettingStartedSection {
+.features p {
+  max-width: 350px;
+  margin: auto;
+}
+
+.tinted {
   background-color: #f7f7f7;
 }
 
-html[data-theme='dark'] .gettingStartedSection {
+html[data-theme='dark'] .tinted {
   background-color: #33363b;
 }

@@ -47,7 +47,7 @@ function Feature({ imageUrl, title, description }) {
       {imgUrl && (
         <div className="text--center">
           <img
-            style={{ filter: 'invert(var(--inversion))' }}
+            style={{ filter: 'invert(1)' }}
             className={styles.featureImage}
             src={imgUrl}
             alt={title}
@@ -65,7 +65,7 @@ function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`${siteConfig.title} | 3kb library for tiny web apps`}
+      title={`Home`}
       description="3kb library for tiny web apps"
     >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
@@ -75,11 +75,11 @@ function Home() {
             alt="Lucia logo"
             src={useBaseUrl('img/logo.svg')}
           />
-          <h2 className="hero__title">{siteConfig.title}</h2>
+          <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
-              className={clsx('button button--secondary button--lg', styles.getStarted)}
+              className={clsx('button button--primary button--lg', styles.getStarted)}
               to={useBaseUrl('docs/essentials/installation')}
             >
               Get Started
@@ -129,7 +129,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div>
+      <div className={styles.tinted}>
         <div className="container padding-vert--xl text--left">
           <div className="row">
             <div className="col col--4 col--offset-1 text--center">
