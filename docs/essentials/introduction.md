@@ -31,3 +31,4 @@ To pickup Lucia quickly, you should understand how Lucia operates. Lucia require
 | [`l-bind`](/docs/essentials/attributeBinding)   | Sets the value of an attribute to the result of a JavaScript expression.                |
 | [`l-for`](/docs/essentials/joiningItems)        | Create new DOM nodes for each item in an array.                                         |
 | [`l-model`](/docs/essentials/formInputBindings) | Adds "two-way data binding" to an element. Keeps input element in sync with view data.  |
+| [`l-href`](/docs/essentials/hotswapping)        | Performs a "fake" page redirect to emulate SPA nagivation emulation                     |

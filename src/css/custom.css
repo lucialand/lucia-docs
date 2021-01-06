@@ -42,6 +42,11 @@ html {
   border-color: #7360e1be;
 }
 
+.alert--danger {
+  background: #fa383ec2;
+  border-color: #fa383ec2;
+}
+
 html[data-theme='dark'] {
   --inversion: 1;
 }
