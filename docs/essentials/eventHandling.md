@@ -7,7 +7,7 @@ You can attach event handlers to elements, limited to `.on<event>` handler event
 
 ```html
 <div l-use="EventHandlers">
-  <button l-on:click="this.announce()" l-text="this.message"></button>
+  <button l-on:click="announce()" l-text="message"></button>
 </div>
 ```
 
@@ -15,7 +15,7 @@ You can attach event handlers to elements, limited to `.on<event>` handler event
 Lucia.use('EventHandlers', {
   message: 'Hello world!',
   announce() {
-    alert(this.message);
+    alert(message);
   },
 });
 ```
@@ -26,11 +26,11 @@ Lucia's compiler also recognizes prefix shorthands, so instead of writing `l-on:
 
 ## Event Properties
 
-You can also attach specific properties to event handler directives by appending `.prop`. Supported properties are: `.stop`, which invokes `.stopPropogation()` on the Event, and `.prevent`. which invokes `.preventDefault()` on the Event.
+You can also attach specific properties to event handler directives by appending `.prop`. Supported properties are: `.stop`, which invokes `.stopPropogation()` on the Event, and `.prevent`. which invokes `.preventDefault()` on the Event. You can also pass `.addEventListener` options, like [`capture`, `once`, and `passive`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
 ```html
 <div l-state="{ notSubmitted() { alert('Overrided') } }">
-  <form l-on:submit.prevent="this.notSubmitted()">
+  <form l-on:submit.prevent="notSubmitted()">
     <button type="submit">Submit</button>
   </form>
 </div>

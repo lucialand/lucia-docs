@@ -7,8 +7,8 @@ Lucia also support list rendering, where you are able to join arrays together an
 
 ```html
 <div l-state="{ fruits: ['apple', 'orange', 'banana'] }">
-  <ul l-for="fruit in this.fruits">
-    <li l-text="this.fruit"></li>
+  <ul l-for="fruit in fruits">
+    <li l-text="fruit"></li>
   </ul>
 </div>
 ```

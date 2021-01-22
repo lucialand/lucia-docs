@@ -23,7 +23,7 @@ const features = [
     imageUrl: 'img/magic-solid.svg',
     description: (
       <>
-        When the view is changed and trapped by the observer, the internal Virtual DOM will
+        When the view is changed and trapped by the observer, the internal AST will
         automatically react and will update and render the new view in realtime.
       </>
     ),

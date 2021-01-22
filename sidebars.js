@@ -11,7 +11,6 @@ module.exports = {
       'essentials/joiningItems',
       'essentials/formInputBindings',
       'essentials/accessingLuciaState',
-      'essentials/hotswapping'
     ],
     Examples: ['examples/todo', 'examples/counter', 'examples/colorChanger'],
   },

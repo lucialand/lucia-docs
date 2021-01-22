@@ -7,7 +7,7 @@ You can also bind attributes to elements. Below is an example of URL binding to 
 
 ```html
 <div l-state="{ url: 'https://example.com' }">
-  <a l-bind:href="this.url">Example Link</a>
+  <a l-bind:href="url">Example Link</a>
 </div>
 ```
 
@@ -21,7 +21,7 @@ For styles and classes, you should use object syntax to toggle classes or specif
 
 ```html
 <div l-state="{ show: true, styles: { color: 'purple' } }">
-  <h1 l-bind:class="{ hello: this.show }">Classes are cool</h1>
-  <h1 l-bind:style="this.styles">Styles are sassy</h1>
+  <h1 l-bind:class="{ hello: show }">Classes are cool</h1>
+  <h1 l-bind:style="styles">Styles are sassy</h1>
 </div>
 ```

@@ -16,12 +16,12 @@ View the [live example here](https://codepen.io/aidenybai/pen/JjRrwjN).
 ```html
 <div l-state="{ value: '', todo: [] }">
   <!-- two-way-binds `value` prop to value -->
-  <input l-model="this.value" />
+  <input l-model="value" />
   <!-- captures click event, pushing current `value` to `todo` -->
-  <button l-on:click="this.todo.push(this.value)">Create</button>
+  <button l-on:click="todo.push(value)">Create</button>
   <!-- joins array together -->
-  <ul l-for="task in this.todo">
-    <li l-text="this.task"></li>
+  <ul l-for="task in todo">
+    <li l-text="task"></li>
   </ul>
 </div>
 ```

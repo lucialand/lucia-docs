@@ -17,8 +17,8 @@ View the [live example here](https://codepen.io/aidenybai/pen/LYRQgvg).
 ```html
 <div l-state="{ color: '' }">
   <!-- two-way-binds `color` prop to value -->
-  <input l-model="this.color" placeholder="Enter in a color or hex code" />
+  <input l-model="color" placeholder="Enter in a color or hex code" />
   <!-- binds color style to `color`, displays `I am {count}` -->
-  <p l-bind:style="{ color: this.color }" l-text="`I am ${this.color}`"></p>
+  <p l-bind:style="{ color }" l-text="`I am ${color}`"></p>
 </div>
 ```

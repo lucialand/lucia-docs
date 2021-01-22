@@ -17,10 +17,10 @@ View the [live example here](https://codepen.io/aidenybai/pen/zYKRmep).
 ```html
 <div l-state="{ count: 0 }">
   <!-- decrements on click, does not show if `count < 0` -->
-  <button l-if="this.count > 0" l-on:click="this.count--">-</button>
+  <button l-if="count > 0" l-on:click="count--">-</button>
   <!-- displays `count` -->
-  <span l-text="this.count">0</span>
+  <span l-text="count">0</span>
   <!-- increments on click, does not show if `count > MAX` -->
-  <button l-if="this.count <= Number.MAX_SAFE_INTEGER" l-on:click="this.count++">+</button>
+  <button l-if="count <= Number.MAX_SAFE_INTEGER" l-on:click="count++">+</button>
 </div>
 ```
