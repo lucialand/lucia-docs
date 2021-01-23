@@ -17,7 +17,7 @@ Lucia allows you to create component scopes with inline Javascript objects with 
 
 ## Manual Initialization
 
-By default, Lucia runs a search of all elements with the `l-state` directive and automatically initializes them. If you need to access [Lucia's state](/docs/essentials/accessingLuciaState), use the `createApp` and `mount` methods. Declaring a Lucia scope in JavaScript automatically initializes it, so if you want initialize at a later time, prepare the view object beforehand.
+By default, Lucia runs a search of all elements with the `l-state` directive and automatically initializes them. If you need to access [Lucia's state](/docs/essentials/accessingLuciaState), use the `component` and `mount` methods. Declaring a Lucia scope in JavaScript automatically initializes it, so if you want initialize at a later time, prepare the view object beforehand.
 
 ```html
 <div id="HelloWorld">
@@ -26,9 +26,8 @@ By default, Lucia runs a search of all elements with the `l-state` directive and
 ```
 
 ```js
-const state = Lucia.createApp({ message: 'Hello World' });
+const HelloWorld = Lucia.component({ message: 'Hello World' });
+const state = HelloWorld.mount('#HelloWorld'); // Pass a selector or element reference
 
 console.log(state);
-
-state.mount('#HelloWorld'); // Pass a selector or element reference
 ```
