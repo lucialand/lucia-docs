@@ -18,7 +18,7 @@ View the [live example here](https://codepen.io/aidenybai/pen/JjRrwjN).
   <!-- two-way-binds `value` prop to value -->
   <input l-model="value" />
   <!-- captures click event, pushing current `value` to `todo` -->
-  <button l-on:click="todo.push(value)">Create</button>
+  <button @click="todo.push(value)">Create</button>
   <!-- joins array together -->
   <ul l-for="task in todo">
     <li l-text="task"></li>
