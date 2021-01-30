@@ -1,17 +1,20 @@
 module.exports = {
-  someSidebar: {
-    Essentials: [
-      'essentials/installation',
-      'essentials/introduction',
-      'essentials/components',
-      'essentials/textInterpolation',
-      'essentials/conditionals',
-      'essentials/eventHandling',
-      'essentials/attributeBinding',
-      'essentials/joiningItems',
-      'essentials/formInputBindings',
-      'essentials/accessingLuciaState',
+  sidebar: {
+    Fundementals: [
+      'fundementals/installation',
+      'fundementals/introduction',
+      'fundementals/core-concepts',
+      'fundementals/todo-app-example',
     ],
-    Examples: ['examples/todo', 'examples/counter', 'examples/colorChanger'],
+    Directives: [
+      'directives/state-directive',
+      'directives/text-directive',
+      'directives/html-directive',
+      'directives/if-directive',
+      'directives/on-directive',
+      'directives/bind-directive',
+      'directives/for-directive',
+      'directives/model-directive',
+    ],
   },
 };

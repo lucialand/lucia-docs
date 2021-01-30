@@ -1,15 +1,17 @@
 ---
-id: todo
+id: todo-app-example
 title: Todo App Example
 ---
 
 Below is an extremely simple implementation of a todo app using Lucia, utilizing zero JavaScript. Tasks can be added by submitting the form with the input.
 
-### Concepts used:
+### Directives used:
 
-- [Component Scope](/docs/essentials/components)
-- [Form Input Bindings](/docs/essentials/formInputBindings)
-- [Joining Items](/docs/essentials/joiningItems)
+- [`l-state`](/docs/directives/state-directive)
+- [`l-text`](/docs/directives/text-directive)
+- [`l-on`](/docs/directives/on-directive)
+- [`l-model`](/docs/directives/model-directive)
+- [`l-for`](/docs/directives/for-directive)
 
 View the [live example here](https://codepen.io/aidenybai/pen/JjRrwjN).
 

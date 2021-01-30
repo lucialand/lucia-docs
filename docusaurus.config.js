@@ -5,8 +5,8 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/logo.ico',
-  organizationName: 'lucialand', // Usually your GitHub org/user name.
-  projectName: 'lucia-docs', // Usually your repo name.
+  organizationName: 'lucialand',
+  projectName: 'lucia-docs',
   themeConfig: {
     prism: {
       theme: require('prism-react-renderer/themes/vsDark'),
@@ -19,15 +19,14 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/essentials/installation',
+          to: 'docs/fundementals/installation',
           activeBasePath: 'docs',
           label: 'Installation',
           position: 'right',
         },
         {
-          to: 'docs/examples/todo',
-          activeBasePath: 'docs',
-          label: 'Examples',
+          href: 'https://discord.gg/q2pSU39',
+          label: 'Discord',
           position: 'right',
         },
         {
