@@ -11,7 +11,7 @@ title: l-state Directive
 
 ---
 
-**Creating components using JavaScript**
+**Other ways of creating components**
 
 > If you are using a bundler, the `l-state` directive will not automatically initialize and you are required to use this syntax. This is because `l-state` relies on document load events, meaning that it is not tree-shakable.
 
