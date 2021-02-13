@@ -20,11 +20,13 @@ To pickup Lucia quickly, you should understand how Lucia operates. Lucia require
 | [`l-bind`](/docs/directives/bind-directive)   | Sets the value of an attribute to the result of a JavaScript expression.                |
 | [`l-for`](/docs/directives/for-directive)     | Create new DOM nodes for each item in an array.                                         |
 | [`l-model`](/docs/directives/model-directive) | Adds "two-way data binding" to an element. Keeps input element in sync with state.      |
+| [`l-mask`](/docs/directives/mask-directive)   | Is removed when an element is rendered.                                                 |
 
 Lucia also provides special properties you can access inside directive expressions:
 
-| Property | Description                                                           |
-| -------- | --------------------------------------------------------------------- |
-| `$el`    | The element the directive is attached to.                             |
-| `$event` | The event object of an event listener.                                |
-| `$emit`  | Create and dispatch a custom event. `$emit('eventName', { options })` |
+| Property  | Description                                                           |
+| --------- | --------------------------------------------------------------------- |
+| `$el`     | The element the directive is attached to.                             |
+| `$render` | Force a full rerender of the DOM. `$render()`                         |
+| `$event`  | The event object of an event listener.                                |
+| `$emit`   | Create and dispatch a custom event. `$emit('eventName', { options })` |

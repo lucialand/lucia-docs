@@ -3,8 +3,9 @@ module.exports = {
     Fundementals: [
       'fundementals/installation',
       'fundementals/introduction',
-      'fundementals/core-concepts',
       'fundementals/todo-app-example',
+      'fundementals/core-concepts',
+      'fundementals/special-cases',
     ],
     Directives: [
       'directives/state-directive',
@@ -15,6 +16,7 @@ module.exports = {
       'directives/bind-directive',
       'directives/for-directive',
       'directives/model-directive',
+      'directives/mask-directive',
     ],
   },
 };
