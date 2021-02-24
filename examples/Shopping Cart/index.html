@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="https://unpkg.com/lucia@next"></script>
+	<title>Shopping Cart Example</title>
+</head>
+<body>
+	<div class="App">
+		<h1>Shopping Cart Example</h1>
+		<ul l-for="item in list">
+			<li>
+				<span l-text="this.item.quantity"></span>
+				<span l-text="this.item.name"></span>
+				<button @click="this.item.quantity++">Increase</button>
+				<button @click="
+					if (this.item.quantity > 0)
+						this.item.quantity--
+				">Decrease</button>
+				<button onclick="this.parentElement.outerHTML=''">Remove</button>
+			</li>
+		</ul>
+		<input placeholder="Item's name" type="text" l-model="itemName"/>
+		<input placeholder="Item's quantity" type="number" l-model="itemQuantity"/>
+		<button @click="
+			if (itemName !== '' && itemQuantity !== '') 
+				list.push({ quantity: itemQuantity, name: itemName })
+		">Add Item</button>
+	</div>
+	<script>
+		const App = Lucia.component({
+			itemName: '',
+			itemQuantity: '',
+			list: [
+				{ quantity: 2, name:' Boot(s)' },
+				{ quantity: 1, name:' Sock(s)' },
+				{ quantity: 3, name:' Shirt(s)' },
+				{ quantity: 4, name:' Mask(s)' }
+			]
+		});
+		App.mount('.App');
+	</script>
+</body>
+</html>
