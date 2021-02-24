@@ -7,7 +7,7 @@
 <body>
 	<div class="App">
 		<h1>Shopping Cart Example</h1>
-		<ul l-for="item in list">
+		<ul l-for="(item, index) in list">
 			<li>
 				<span l-text="this.item.quantity"></span>
 				<span l-text="this.item.name"></span>
@@ -16,7 +16,7 @@
 					if (this.item.quantity > 0)
 						this.item.quantity--
 				">Decrease</button>
-				<button onclick="this.parentElement.outerHTML=''">Remove</button>
+				<button @click="list.splice(this.index, 1)">Remove</button>
 			</li>
 		</ul>
 		<input placeholder="Item's name" type="text" l-model="itemName"/>
