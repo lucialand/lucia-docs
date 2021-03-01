@@ -23,9 +23,9 @@ To pickup Lucia quickly, you should understand how Lucia operates. Lucia require
 
 Lucia also provides special properties you can access inside directive expressions:
 
-| Property  | Description                                                           |
-| --------- | --------------------------------------------------------------------- |
-| `$el`     | The element the directive is attached to.                             |
-| `$render` | Force rerender of props. `$render([...props?])`                       |
-| `$event`  | The event object of an event listener.                                |
-| `$emit`   | Create and dispatch a custom event. `$emit('eventName', { options })` |
+| Property                                             | Description                               |
+| ---------------------------------------------------- | ----------------------------------------- |
+| [`$el`](/docs/specialProperties/el-property)         | The element the directive is attached to. |
+| [`$render`](/docs/specialProperties/render-property) | Force rerender of props.                  |
+| [`$event`](/docs/specialProperties/event-property)   | The event object of an event listener.    |
+| [`$emit`](/docs/specialProperties/emit-property)     | Create and dispatch a custom event.       |

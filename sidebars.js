@@ -17,5 +17,11 @@ module.exports = {
       'directives/model-directive',
       'directives/mask-directive',
     ],
+    'Special Properties': [
+      'specialProperties/el-property',
+      'specialProperties/render-property',
+      'specialProperties/event-property',
+      'specialProperties/emit-property',
+    ],
   },
 };

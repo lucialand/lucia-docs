@@ -13,4 +13,4 @@ You can mitigate this by using the [`l-mask`](/docs/directives/mask-directive), 
 
 ### Broken Dependencies and Force Render
 
-Lucia tries its best to automagically compile the necessary dependencies for every component and dynamic node, however there are some edge cases that could occur. This means if a prop is changed it could be possible that it is not rendered. If this occurs, use the `$render()` magic property, which force renders all dynamic nodes.
+Lucia tries its best to automagically compile the necessary dependencies for every component and dynamic node, however there are some edge cases that could occur. This means if a prop is changed it could be possible that it is not rendered. If this occurs, use the [`$render()`](/docs/specialProperties/render-property) special property, which force renders all dynamic nodes.
