@@ -37,6 +37,12 @@ The `.outside` property attaches an event handler to the document, conditionally
 
 ---
 
+**`.self` property**
+
+The `.self` property attaches an event handler to the element, conditionally excluding the children of that element. This means that it only executes the expression when only target element is fired. This could be used for cards with additional interactives.
+
+---
+
 **`.once` property**
 
 The `.once` property forces the event listener to only be called once, meaning that event calls after will not work. This can be useful for one-time actions, such as loading HTML into the document from Ajax.

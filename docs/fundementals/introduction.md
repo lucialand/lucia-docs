@@ -26,6 +26,6 @@ Lucia also provides special properties you can access inside directive expressio
 | Property  | Description                                                           |
 | --------- | --------------------------------------------------------------------- |
 | `$el`     | The element the directive is attached to.                             |
-| `$render` | Force a full rerender of the DOM. `$render()`                         |
+| `$render` | Force rerender of props. `$render([...props?])`                       |
 | `$event`  | The event object of an event listener.                                |
 | `$emit`   | Create and dispatch a custom event. `$emit('eventName', { options })` |
