@@ -12,7 +12,6 @@ To pickup Lucia quickly, you should understand how Lucia operates. Lucia require
 | Directive                                     | Description                                                                             |
 | --------------------------------------------- | --------------------------------------------------------------------------------------- |
 | [`l-state`](/docs/directives/state-directive) | Declares and initializes a new component scope.                                         |
-| [`l-init`](/docs/directives/init-directive)   | Executes an expression when `l-state` is initialized.                                   |
 | [`l-text`](/docs/directives/text-directive)   | Works similarly to `l-bind`, but will update the `textContent` of an element.           |
 | [`l-html`](/docs/directives/html-directive)   | Works similarly to `l-bind`, but will update the `innerHTML` of an element.             |
 | [`l-on`](/docs/directives/on-directive)       | Attaches an event listener to the element. Executes JavaScript expression when emitted. |
