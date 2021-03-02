@@ -15,7 +15,6 @@ module.exports = {
       'directives/bind-directive',
       'directives/for-directive',
       'directives/model-directive',
-      'directives/init-directive',
       'directives/mask-directive',
     ],
     'Special Properties': [
