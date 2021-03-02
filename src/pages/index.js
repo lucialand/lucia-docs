@@ -23,7 +23,7 @@ const features = [
     imageUrl: 'img/magic-solid.svg',
     description: (
       <>
-        When the view is changed and trapped by the observer, the internal AST will
+        When the state is changed and trapped by the observer, the internal AST will
         automatically react and will update and render the new view in realtime.
       </>
     ),
@@ -152,7 +152,7 @@ function Home() {
                 <br />
                 <br />
                 Lucia not only supports markup oriented code, but also supports APIs for JavaScript
-                usage, such as components, view access and more!
+                usage, such as components, state access and more!
               </p>
             </div>
           </div>
