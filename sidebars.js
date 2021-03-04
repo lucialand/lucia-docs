@@ -22,6 +22,7 @@ module.exports = {
       'specialProperties/render-property',
       'specialProperties/event-property',
       'specialProperties/emit-property',
+      'specialProperties/refs-property',
     ],
   },
 };

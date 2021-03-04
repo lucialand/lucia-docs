@@ -18,6 +18,7 @@ To pickup Lucia quickly, you should understand how Lucia operates. Lucia require
 | [`l-bind`](/docs/directives/bind-directive)   | Sets the value of an attribute to the result of a JavaScript expression.                |
 | [`l-for`](/docs/directives/for-directive)     | Create new DOM nodes for each item in an array.                                         |
 | [`l-model`](/docs/directives/model-directive) | Adds "two-way data binding" to an element. Keeps input element in sync with state.      |
+| [`l-ref`](/docs/directives/ref-directive)     | Specify a DOM node to become a ref                                                      |
 | [`l-mask`](/docs/directives/mask-directive)   | Is removed when an element is rendered.                                                 |
 
 Lucia also provides special properties you can access inside directive expressions:
@@ -28,3 +29,4 @@ Lucia also provides special properties you can access inside directive expressio
 | [`$render`](/docs/specialProperties/render-property) | Force rerender of props.                  |
 | [`$event`](/docs/specialProperties/event-property)   | The event object of an event listener.    |
 | [`$emit`](/docs/specialProperties/emit-property)     | Create and dispatch a custom event.       |
+| [`$refs`](/docs/specialProperties/emit-property)     | Get object of refs                        |
