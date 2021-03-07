@@ -14,6 +14,7 @@ To pickup Lucia quickly, you should understand how Lucia operates. Lucia require
 | [`l-state`](/docs/directives/state-directive) | Declares and initializes a new component scope.                                         |
 | [`l-text`](/docs/directives/text-directive)   | Works similarly to `l-bind`, but will update the `textContent` of an element.           |
 | [`l-html`](/docs/directives/html-directive)   | Works similarly to `l-bind`, but will update the `innerHTML` of an element.             |
+| [`l-show`](/docs/directives/sgiw-directive)   | Toggles `display: none;` on an element based on the expression's boolean value          |
 | [`l-on`](/docs/directives/on-directive)       | Attaches an event listener to the element. Executes JavaScript expression when emitted. |
 | [`l-bind`](/docs/directives/bind-directive)   | Sets the value of an attribute to the result of a JavaScript expression.                |
 | [`l-for`](/docs/directives/for-directive)     | Create new DOM nodes for each item in an array.                                         |
