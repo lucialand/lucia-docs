@@ -23,8 +23,8 @@ const features = [
     imageUrl: 'img/magic-solid.svg',
     description: (
       <>
-        When the state is changed and trapped by the observer, the internal AST will
-        automatically react and will update and render the new view in realtime.
+        When the state is changed and trapped by the observer, the internal AST will automatically
+        react and will update and render the new view in realtime.
       </>
     ),
   },
@@ -64,10 +64,7 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
-    <Layout
-      title={`Home`}
-      description="3kb library for tiny web apps"
-    >
+    <Layout title={`Home`} description="3kb library for tiny web apps">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <img

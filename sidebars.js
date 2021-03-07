@@ -11,6 +11,7 @@ module.exports = {
       'directives/state-directive',
       'directives/text-directive',
       'directives/html-directive',
+      'directives/show-directive',
       'directives/on-directive',
       'directives/bind-directive',
       'directives/for-directive',

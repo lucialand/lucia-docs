@@ -37,7 +37,14 @@ module.exports = {
       ],
     },
     footer: {
-      copyright: `Copyright © ${new Date().getFullYear()} The Lucia Authors.`,
+      copyright: `
+      <small>Sponsored by:</small><br>
+      <img
+        width="10%"
+        src="https://raw.githubusercontent.com/Anomaly-Science/assets/main/SVG/Anomaly%20Science%20Logo%20Full%20Light%20Mode.svg"
+        alt="Anomaly Science"
+      ></img><br><br>
+      <small>Copyright © ${new Date().getFullYear()} The Lucia Authors.</small>`,
     },
     algolia: {
       apiKey: '005d225d1319cf1f39881d336adb99e5',
