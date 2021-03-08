@@ -52,3 +52,9 @@ The `.once` property forces the event listener to only be called once, meaning t
 **`.passive` property**
 
 The `.passive` property helps with better scroll performance, especially on mobile devices.
+
+---
+
+**`.[keycode]` properties**
+
+The `.[keycode]` properties allows for key whitelisting when used in conjunction of a `KeyboardEvent` invocation. Just append extra properties with key event keycodes, which can be easily found on [this website](http://keycode.info/).
