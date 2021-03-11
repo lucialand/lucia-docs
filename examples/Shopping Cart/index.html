@@ -7,10 +7,11 @@
 <body>
 	<div class="App">
 		<h1>Shopping Cart Example</h1>
+		<span l-bind:hidden="list.length != 0">- EMPTY CART -</span>
 		<ul l-for="(item, index) in list">
 			<li>
 				<span l-text="this.item.quantity"></span>
-				<span l-text="this.item.name"></span>
+				<span><span l-text="this.item.name"></span><span l-bind:hidden="this.item.quantity < 2">(s)</span></span>
 				<button @click="this.item.quantity++">Increase</button>
 				<button @click="
 					if (this.item.quantity > 0)
@@ -31,10 +32,10 @@
 			itemName: '',
 			itemQuantity: '',
 			list: [
-				{ quantity: 2, name:' Boot(s)' },
-				{ quantity: 1, name:' Sock(s)' },
-				{ quantity: 3, name:' Shirt(s)' },
-				{ quantity: 4, name:' Mask(s)' }
+				{ quantity: 2, name:' Boot' },
+				{ quantity: 1, name:' Sock' },
+				{ quantity: 3, name:' Shirt' },
+				{ quantity: 4, name:' Mask' }
 			]
 		});
 		App.mount('.App');
