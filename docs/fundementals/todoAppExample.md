@@ -23,7 +23,7 @@ View the [live example here](https://codepen.io/aidenybai/pen/JjRrwjN).
   <button @click="todo.push(value)">Create</button>
   <!-- joins array together -->
   <ul l-for="task in todo">
-    <li l-text="task"></li>
+    <li l-text="this.task"></li>
   </ul>
 </div>
 ```
