@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script src="https://unpkg.com/lucia"></script>
+</head>
+
+<body>
+    <div class="App" align="center">
+        <h1>Endless counter</h1>
+        <div>
+            Counter: <span l-text="count"></span>
+        </div>
+        <br/>
+        <button onclick="clearInterval(loop)">Stop</button>
+    </div>
+    <script>
+        const App = Lucia.component({ count: 0 });
+        App.mount('.App');
+        let loop = setInterval(() => {
+            App.state.count++;
+        },1000);
+    </script>
+</body>
+
+</html>
