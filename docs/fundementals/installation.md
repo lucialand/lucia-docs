@@ -28,10 +28,6 @@ Generally if you're going to be using Lucia long term you should specify a speci
 
 ### npm
 
-> If you are planning to create a fresh new project, using the [lucia-starter](https://github.com/aidenybai/lucia-starter) boilerplate repository is highly recommended.
->
-> [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/aidenybai/lucia-starter)
-
 Another option is installing via if you are using a module bundler such as [Webpack](https://webpack.js.org/), [Rollup](https://rollupjs.org), or [Parcel](https://parceljs.org/). It's currently the recommended installation method when building large scale applications.
 
 ```sh
