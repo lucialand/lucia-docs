@@ -25,8 +25,8 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://discord.gg/q2pSU39',
-          label: 'Discord',
+          href: 'https://github.com/aidenybai/lucia/discussions',
+          label: 'Discussions',
           position: 'right',
         },
         {
