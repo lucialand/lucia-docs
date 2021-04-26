@@ -38,7 +38,7 @@ module.exports = {
     },
     footer: {
       copyright: `
-      <small>Copyright © ${new Date().getFullYear()} The Hack Foundation.<br>
+      <small>Copyright © 2020-${new Date().getFullYear()} Aiden Bai.<br>
       Fiscally sponsored by The Hack Foundation.<br>
       Nonprofit EIN: 81-2908499.</small>`,
     },
