@@ -5,6 +5,7 @@ module.exports = {
       'fundementals/introduction',
       'fundementals/todo-app-example',
       'fundementals/core-concepts',
+      'fundementals/custom-components',
       'fundementals/special-cases',
     ],
     Directives: [
