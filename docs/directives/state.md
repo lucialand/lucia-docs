@@ -30,8 +30,13 @@ You can also create a reusable component in the JavaScript and mount it on multi
 
 <script>
   // Assumes a global Lucia variable is already defined
-  const App = Lucia.component({ message: 'Hello World' });
+  const { component } = Lucia;
 
-  App.mount('#app');
+  const App = () => {
+    const state = () => ({ message: 'Hello World' });
+    return component(state);
+  }
+  const app = App();
+  app.init('#app');
 </script>
 ```
