@@ -17,7 +17,6 @@ module.exports = {
       'directives/for-directive',
       'directives/model-directive',
       'directives/ref-directive',
-      'directives/mask-directive',
     ],
     'Special Properties': [
       'specialProperties/el-property',

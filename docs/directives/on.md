@@ -11,20 +11,6 @@ title: l-on Directive
 
 **Example:** `<button l-on:click="key = 'value'">Change value</button>`
 
----
-
-**`mounted` event**
-
-The `mounted` event fires when an element that has a `l-state` directive is initialized as a component.
-
----
-
-**`effect` event**
-
-The `effect` event fires when an element is modified.
-
----
-
 **`.global` property**
 
 The `.global` property forces the event listener to be attached to the `document` instead of the target element.
