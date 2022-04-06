@@ -33,4 +33,4 @@ title: l-bind Directive
 
 `l-bind` also supports object literal syntax for binding several attributes that are not styles or classes.
 
-**Example:** `<button l-bind:style="{ hidden: true, title: 'Hello World' }">...</button>`
+**Example:** `<button l-bind="{ hidden: true, title: 'Hello World' }">...</button>`
